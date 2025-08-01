@@ -1,0 +1,45 @@
+
+name: AI Code Review
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'gradle'
+
+      - name: Build and run Spring Boot application
+        run: |
+          chmod +x gradlew
+          ./gradlew bootRun &
+          sleep 30 # Give the application time to start
+        working-directory: ai-code-reviewer
+
+      - name: Send GitHub Webhook to local application
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # This is a placeholder. In a real scenario, you'd need a publicly accessible URL for your webhook.
+          # For local testing, you might use ngrok to expose your local server.
+          # Example using curl to simulate a webhook event:
+          # curl -X POST -H "Content-Type: application/json" \
+          #      -H "X-GitHub-Event: pull_request" \
+          #      -d "$(cat $GITHUB_EVENT_PATH)" \
+          #      http://localhost:8080/webhook/github
+          
+          echo "Simulating webhook event. Replace this with actual webhook delivery to your running application."
+          echo "To test locally, you can use ngrok to expose your Spring Boot app (e.g., ngrok http 8080) and then manually send the webhook payload."
+          echo "The Spring Boot application is running in the background and listening for webhooks."
+
+
