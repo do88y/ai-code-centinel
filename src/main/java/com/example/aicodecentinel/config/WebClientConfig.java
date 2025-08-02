@@ -1,5 +1,5 @@
 
-package com.example.aicodereviewer.config;
+package com.example.aicodecentinel.config;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;

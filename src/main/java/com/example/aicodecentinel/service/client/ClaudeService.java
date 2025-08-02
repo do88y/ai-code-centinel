@@ -1,8 +1,8 @@
-package com.example.aicodereviewer.service.client;
+package com.example.aicodecentinel.service.client;
 
-import com.example.aicodereviewer.config.AnthropicProperties;
-import com.example.aicodereviewer.dto.claude.ClaudeRequest;
-import com.example.aicodereviewer.dto.claude.ClaudeResponse;
+import com.example.aicodecentinel.config.AnthropicProperties;
+import com.example.aicodecentinel.dto.claude.ClaudeRequest;
+import com.example.aicodecentinel.dto.claude.ClaudeResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

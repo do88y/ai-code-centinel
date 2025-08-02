@@ -36,8 +36,8 @@ It leverages Anthropic's Claude Sonnet 3.7 to provide intelligent, context-aware
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/ai-code-reviewer.git
-cd ai-code-reviewer
+git clone https://github.com/your-username/ai-code-centinel.git
+cd ai-code-centinel
 ```
 
 ### 2. GitHub App Configuration
@@ -88,7 +88,7 @@ If you prefer not to use `direnv`, you can set the environment variables manuall
 ### 4. Run the Application
 
 ```bash
-cd ai-code-reviewer
+cd ai-code-centinel
 ./gradlew bootRun
 ```
 The app will start on `http://localhost:8080`. Ensure `ngrok` (if used) forwards traffic to this port.

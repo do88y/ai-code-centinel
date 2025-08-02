@@ -1,12 +1,12 @@
 
 
-package com.example.aicodereviewer.service;
+package com.example.aicodecentinel.service;
 
-import com.example.aicodereviewer.dto.claude.ClaudeResponse;
-import com.example.aicodereviewer.dto.github.ReviewComment;
-import com.example.aicodereviewer.dto.github.ReviewRequest;
-import com.example.aicodereviewer.service.client.ClaudeService;
-import com.example.aicodereviewer.service.client.GithubService;
+import com.example.aicodecentinel.dto.claude.ClaudeResponse;
+import com.example.aicodecentinel.dto.github.ReviewComment;
+import com.example.aicodecentinel.dto.github.ReviewRequest;
+import com.example.aicodecentinel.service.client.ClaudeService;
+import com.example.aicodecentinel.service.client.GithubService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

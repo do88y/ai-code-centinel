@@ -1,7 +1,7 @@
 
-package com.example.aicodereviewer.controller;
+package com.example.aicodecentinel.controller;
 
-import com.example.aicodereviewer.service.ReviewService;
+import com.example.aicodecentinel.service.ReviewService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

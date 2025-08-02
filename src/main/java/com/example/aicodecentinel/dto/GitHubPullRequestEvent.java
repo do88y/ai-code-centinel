@@ -1,5 +1,5 @@
 
-package com.example.aicodereviewer.dto;
+package com.example.aicodecentinel.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

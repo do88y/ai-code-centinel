@@ -1,5 +1,5 @@
 
-package com.example.aicodereviewer.dto.github;
+package com.example.aicodecentinel.dto.github;
 
 import lombok.Builder;
 import lombok.Getter;

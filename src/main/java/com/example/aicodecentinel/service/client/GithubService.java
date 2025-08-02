@@ -1,9 +1,9 @@
-package com.example.aicodereviewer.service.client;
+package com.example.aicodecentinel.service.client;
 
-import com.example.aicodereviewer.config.GithubProperties;
-import com.example.aicodereviewer.dto.github.CommentRequest;
-import com.example.aicodereviewer.dto.github.Content;
-import com.example.aicodereviewer.dto.github.ReviewRequest;
+import com.example.aicodecentinel.config.GithubProperties;
+import com.example.aicodecentinel.dto.github.CommentRequest;
+import com.example.aicodecentinel.dto.github.Content;
+import com.example.aicodecentinel.dto.github.ReviewRequest;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import lombok.RequiredArgsConstructor;

@@ -1,13 +1,13 @@
-package com.example.aicodereviewer;
+package com.example.aicodecentinel;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AiCodeReviewerApplication {
+public class AiCodeCentinelApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AiCodeReviewerApplication.class, args);
+		SpringApplication.run(AiCodeCentinelApplication.class, args);
 	}
 
 }

@@ -1,5 +1,5 @@
 
-package com.example.aicodereviewer.config;
+package com.example.aicodecentinel.config;
 
 import lombok.Getter;
 import lombok.Setter;
